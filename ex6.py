@@ -1,8 +1,16 @@
 name = (input ("What's your name? "))
 print(f"Nice to meet you {name}.")
+#input allowing the user to answer to the question
 
-age = input ("What's your age? ")
-if age == int:
-    print(f"Your age is {age}")
+age = int(input("What's your age? "))
+print(f"So youre {age} years old.")
+if age > 20:
+    print("You're so old :O")
 else:
-    print("you stupid")
+    print("You're so young o_o")
+
+height = int(input("What's your height?"))
+if height > 180:
+    print("You're taller than me but size isn't everything.")
+else:
+    print("You're small compared to me.")
