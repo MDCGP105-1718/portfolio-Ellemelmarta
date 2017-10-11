@@ -28,3 +28,14 @@ if ( bmi >= 18.5 and bmi < 25 ):
     print("Your bmi is within the healthy range.")
 else:
     print("Your bmi is not within the healthy range.")
+
+ecolour = input("What is your eye colour? ")
+if ecolour in ['brown', 'Brown']:
+#The in statement helps for me to be able to make sure it recognises both upper and lower case b as the answer
+    print("Your eye colour is the same as mine, the best colour!")
+elif ecolour in ['Blue', 'blue']:
+#the elif statment then allows me to also check for blue as an answer
+    print("Blue eyes are always nice, like looking at a tiny ocean.")
+else:
+    print("The rare species of man.")
+#this final statement only takes place if the above 4 answers are not given and will cover every other colour
