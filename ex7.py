@@ -10,10 +10,9 @@ r = 0.04
 totalmonths = 0
 monthlyr = current_savings*r/12
 #monthly interest calculation
-finalcost = total_cost - portion_deposit
 #added finalcost variable to work out what the cost is without the deposit
 
-while current_savings < finalcost:
+while current_savings < total_cost:
     current_savings += (monthly_salary * portion_saved + monthlyr)
 #calculating the new current savings each month
     monthlyr += current_savings*r/12
@@ -22,4 +21,5 @@ while current_savings < finalcost:
 #adding 1 month to the total months value that will be printed
 else:
     print(f"The amount of months you need is: {totalmonths}")
+    print(f"Your deposit will cost you: £{portion_deposit}")
 #When the value of current_savings reaches what finalcost is then it will print this statement showing the count of loops as months
