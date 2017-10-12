@@ -3,7 +3,7 @@ portion_saved = float(input ("Please enter the percentage of your salary you wis
 total_cost = float(input ("What is the cost of your desired home: "))
 semi_annual_raise = float(input("What is your semi annual raise percentage as a decimal? "))
 monthly_salary = annual_salary/12.0
-portion_deposit = 0.2*total_cost
+portion_deposit = 0.20*total_cost
 #calculating the deposit required to be put down
 current_savings = 0.0
 r = 0.04
@@ -11,8 +11,6 @@ totalmonths = 0
 monthlyr = current_savings*r/12
 #monthly interest calculation
 #added finalcost variable to work out what the cost is without the deposit
-
-print(f"monthly salary is £{monthly_salary}")
 
 while current_savings < portion_deposit:
     current_savings += ((monthly_salary * portion_saved) + monthlyr)
