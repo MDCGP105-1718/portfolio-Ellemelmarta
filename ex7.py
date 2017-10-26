@@ -23,3 +23,6 @@ else:
     print(f"The amount of months you need is: {totalmonths}")
     print(f"Your deposit will cost you: £{portion_deposit}")
 #When the value of current_savings reaches what finalcost is then it will print this statement showing the count of loops as months
+
+
+#switch this thing to an if/for loop
