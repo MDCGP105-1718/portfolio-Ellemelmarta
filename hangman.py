@@ -58,6 +58,7 @@ def is_word_guessed(secret_word, letters_guessed):
         if letter_guess not in letters_guessed:
             return False
     return True
+    #checks to see if letter_guess (the input from user) is in secret_word and returns true if not then false
 
 
 def get_guessed_word(secret_word, letters_guessed):
@@ -73,8 +74,10 @@ def get_guessed_word(secret_word, letters_guessed):
     for letter_guess in range (len(secret_word)):
         if secret_word[letter_guess] in letters_guessed:
             guess += secret_word[letter_guess]
+            #adding letter guessed to guess if correct
         else:
             guess += ' _ '
+            #adding an underscore if the letter space is empty
     return guess
 
 
@@ -86,6 +89,8 @@ def get_available_letters(letters_guessed):
       yet been guessed.
     '''
     available_letters = ''
+
+    #string.ascii_lowercase accounts for all the alphabet in lowercase
     for letter in string.ascii_lowercase:
         if letter not in letters_guessed:
             available_letters = available_letters + letter
@@ -122,24 +127,23 @@ def hangman(secret_word):
     # FILL IN YOUR CODE HERE AND DELETE "pass"
     letters_guessed = []
     guess_remaining = 6
-    mistakes = 0
+    mistakes = 0 #set mistakes so i can count each time they get a letter wrong and check
     available_letters = get_available_letters(letters_guessed)
-    secret_word_list = list(secret_word)
 
     print ("I want to play a game...")
     print ("Guess the word and make it out alive, the amount of letters in the word is: ", len(secret_word),  " good luck.")
 
     while mistakes < 6:
-        print ("")
+        print ("") #printing an empty line making it easier on the eye to read when printed
 
         if is_word_guessed(secret_word, letters_guessed):
             print (f"Congratulations you guessed the word, the word was: {secret_word}")
-            break
+            break #otherwise it will go through the loop one more time even when you have won.
 
         print (f"Your remaining guesses: {guess_remaining}")
         print (f"The letters reamining are: {available_letters}")
 
-        letter_guess = input("Please guess a letter: ")
+        letter_guess = input("Please guess a letter: ") #sets new letter guess off users input each time through the loop
 
         if letter_guess in letters_guessed:
             print ("You've already guessed this letter lose a guess for not paying attention.")
@@ -156,6 +160,7 @@ def hangman(secret_word):
                 print ("Incorrect guess that letter is not in the word: " + get_guessed_word(secret_word, letters_guessed))
                 guess_remaining -= 1
                 mistakes += 1
+    #only way I could find to exit while loop as mistakes == 6 didnt work as the while loop doesnt let it run that far so else statement is easier way to break out when it reaches 6
     else:
         print("")
         print (f"You lost, you ran out of guesses. The word was: {secret_word}")
