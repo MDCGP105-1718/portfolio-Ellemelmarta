@@ -150,13 +150,13 @@ word_repeat = int(input("Enter the number for finding words the repeated at leas
 def input_frequency(lyric_dict, word_repeat):
     """
     """
-    lyric_dict_higher = []
+    lyric_dict_higher = {}
     for a in lyric_dict.keys():
         #to make sure it is using the key values
         if word_repeat <= lyric_dict[a]:
-            lyric_dict_higher.append(a)
+            lyric_dict_higher[a] = lyric_dict[a]
     return lyric_dict_higher
-print (f"These are the words that repeat more than {word_repeat} times:", str(input_frequency(lyric_dict, word_repeat)).strip('[]'))
+print (f"These are the words that repeat more than {word_repeat} times:", str(input_frequency(lyric_dict, word_repeat)).strip('{}'))
 #.strip helps to remove the [] from the list created and print just the number
 
 
