@@ -124,9 +124,6 @@ Cry me cry me
 Cry me a river
 Cry me cry me
 """
-
-word = (input("Please enter a word to find in the song in lowercase: "))
-
 lyrics_check = (lyrics.lower()).split()
 #turned lyrics into lower case so it counts them all as the count was case sensitive so displayed slightly wrong
 
@@ -140,34 +137,49 @@ def freq_dict(lyrics_check):
 #goes through list if the word is the same as one thats come up before then +1 to value if not makes new entry with value 1)
     return count_lyrics
 
-
 lyric_dict = freq_dict(lyrics_check)
 
 most_commmon = max(lyric_dict, key=lyric_dict.get)
 #making the max look at the highest value for the key and providing us with the dictionary input that goes with it
 most_commmon_value = max(lyric_dict.values())
 
-
 print (f"The word that appears the most is: '{most_commmon}', appearing: {most_commmon_value} times.")
 
+word_repeat = int(input("Enter the number for finding words the repeated at least X amount of times: "))
 
-
-
-def freq_dict_input(lyrics_check, word):
+def input_frequency(lyric_dict, word_repeat):
     """
-    Checks how many times the user input is within the song lyrics
     """
-    frequency = []
-    for x in lyrics_check:
-        if x in word:
-            frequency.append(lyrics_check.count(x))
-            break
-    if x not in word:
-        frequency = 0
-    return frequency
-
-#without break it would keep going through counting the letter and adding it to frequency list which ends up as
-#lots of the same number this way it just prints the count once
-
-print (f"This word can be found", str(freq_dict_input(lyrics_check, word)).strip('[]'), "times.")
+    lyric_dict_higher = []
+    for a in lyric_dict.keys():
+        #to make sure it is using the key values
+        if word_repeat <= lyric_dict[a]:
+            lyric_dict_higher.append(a)
+    return lyric_dict_higher
+print (f"These are the words that repeat more than {word_repeat} times:", str(input_frequency(lyric_dict, word_repeat)).strip('[]'))
 #.strip helps to remove the [] from the list created and print just the number
+
+
+# ----------------------------------------------------------------------
+## Excess code I created at the start of creating this which worked with lists not dictionary and was looking for
+## how many times a word repeated that the user entered.
+#
+#word = (input("Please enter a word to find in the song in lowercase: "))
+#
+#def freq_dict_input(lyrics_check, word):
+#    """
+#    Checks how many times the user input is within the song lyrics
+#    """
+#    frequency = []
+#    for x in lyrics_check:
+#        if x in word:
+#            frequency.append(lyrics_check.count(x))
+#            break
+#    if x not in word:
+#        frequency = 0
+#    return frequency
+#
+##without break it would keep going through counting the letter and adding it to frequency list which ends up as
+##lots of the same number this way it just prints the count once
+#
+#print (f"This word can be found", str(freq_dict_input(lyrics_check, word)).strip('[]'), "times.")
