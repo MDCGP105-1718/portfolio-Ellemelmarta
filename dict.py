@@ -145,7 +145,9 @@ most_commmon_value = max(lyric_dict.values())
 
 print (f"The word that appears the most is: '{most_commmon}', appearing: {most_commmon_value} times.")
 
+#insert something to avoid the input error like with letters etc
 word_repeat = int(input("Enter the number for finding words the repeated at least X amount of times: "))
+
 
 def input_frequency(lyric_dict, word_repeat):
     """
