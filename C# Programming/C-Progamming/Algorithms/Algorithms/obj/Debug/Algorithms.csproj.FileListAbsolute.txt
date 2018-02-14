@@ -1,0 +1,14 @@
+F:\University\C# Programming\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+F:\University\C# Programming\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+F:\University\C# Programming\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+F:\University\C# Programming\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+F:\University\C# Programming\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+F:\University\C# Programming\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+F:\University\C# Programming\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
