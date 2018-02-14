@@ -12,6 +12,8 @@ namespace Algorithms
         {
             Algorithm_Insertion insertion = new Algorithm_Insertion();
             insertion.SortValues();
+            Algorithm_Selection selection = new Algorithm_Selection();
+            selection.SortValues();
         }
     }
 }

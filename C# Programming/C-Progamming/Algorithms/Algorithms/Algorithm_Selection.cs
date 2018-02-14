@@ -39,6 +39,27 @@ namespace Algorithms
         // class for selection sort implementation.
         public void SortValues()
         {
+            int length = values.Length;
+
+            for (int i = 0; i < length; i++)
+            {
+                int min = i;
+
+                for (int j = 0; j < length; j++)
+
+                {
+                    // when j's index is larger than i's index swap the values
+                    if (values[j] > values[min])
+
+                    {
+                        int temp = values[i];
+                        min = j;
+                        values[i] = values[min];
+                        values[min] = temp;
+                    }
+                }
+             PrintValues();
+            }
         }
     }
 }

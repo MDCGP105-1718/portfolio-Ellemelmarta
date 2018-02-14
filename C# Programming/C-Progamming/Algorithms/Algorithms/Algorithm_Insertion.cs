@@ -56,7 +56,7 @@ namespace Algorithms
 
                     j--;
                 }
-               PrintValues();
+                PrintValues();
             }
         }
     }

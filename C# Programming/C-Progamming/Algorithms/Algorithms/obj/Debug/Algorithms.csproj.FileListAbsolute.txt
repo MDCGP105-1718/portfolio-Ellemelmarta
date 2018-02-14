@@ -12,3 +12,9 @@ F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algori
 F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.exe
 F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
 F:\University\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+F:\University\Coding-GitMain\portfolio-Ellemelmarta\C# Programming\C-Progamming\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+F:\University\Coding-GitMain\portfolio-Ellemelmarta\C# Programming\C-Progamming\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+F:\University\Coding-GitMain\portfolio-Ellemelmarta\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+F:\University\Coding-GitMain\portfolio-Ellemelmarta\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+F:\University\Coding-GitMain\portfolio-Ellemelmarta\C# Programming\C-Progamming\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+F:\University\Coding-GitMain\portfolio-Ellemelmarta\C# Programming\C-Progamming\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
